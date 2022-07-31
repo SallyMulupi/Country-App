@@ -13,3 +13,41 @@ const linkStyles = {
   textDecoration: "none",
   color: "white",
 };
+function NavBar() {
+    return (
+      <ListContainer className="ul">
+        <NavLink
+          to="/"
+          exact="true"
+          style={linkStyles}
+          // activeStyle={{
+          //   background: "darkblue",
+          // }}
+        >
+          <li>Home</li>
+        </NavLink>
+        <NavLink
+          to="/allcountries"
+          exact="true"
+          style={linkStyles}
+          // activeStyle={{
+          //   background: "darkblue",
+          // }}
+        >
+          <li>All Countries</li>
+        </NavLink>
+        <NavLink
+          to="/about"
+          exact="true"
+          style={linkStyles}
+          // activeStyle={{
+          //   background: "darkblue",
+          // }}
+        >
+          <li>About</li>
+        </NavLink>
+        
+        <NavLink
+          to="/contact"
+          exact="true"
+          style={linkStyles}
