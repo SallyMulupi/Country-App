@@ -1,13 +1,70 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    * {
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+    --primary: #0d0d0e;
+    --secondary: #21d07a;
+    --white: #fff;
 }
+
+.ul li {
+    list-style: none;
+    padding: 1.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.ul li:hover {
+    background-color: red;
+    border-radius: 0.5rem;
+}
+
+.homecontainer {
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* homeInfor */
+
+.homeinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 17% auto;
+    width: 60%;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.homeinfo>h1 h2 p {
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.span {
+    color: red;
+}
+
+
+/* food container */
+
+.bothfoodsearch {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainFoodcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foodcontainer {
+    padding: 20px;
