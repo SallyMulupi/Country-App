@@ -51,3 +51,14 @@ function NavBar() {
           to="/contact"
           exact="true"
           style={linkStyles}
+          // activeStyle={{
+        //   background: "darkblue",
+        // }}
+      >
+      <li>Contact Us</li>
+    </NavLink>
+  </ListContainer>
+);
+}
+
+export default NavBar;
