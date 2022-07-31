@@ -15,3 +15,21 @@ const AllCountries = ({continents}) => {
         flags={continent.flags.png}
         population={continent.population}
         />
+        ))
+        // {      countryTDisplay.filter((continent) => continent.capital.toLowerCase().includes(search.toLowerCase()));
+        // }
+        
+        return (
+            <div className="bothfoodsearch">
+              <div>
+                <Search onSearchChange={setSearch} search={search}/>
+              </div>
+            <div className="mainFoodcontainer">
+            {/* <CountryInfo/> */}
+            {countryTDisplay}
+            </div>
+            </div>
+          );
+    }
+    
+    export default AllCountries
