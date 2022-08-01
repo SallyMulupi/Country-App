@@ -1,19 +1,25 @@
 import React from 'react'
-import './index.css'
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
+import {FaBars, FaTimes, FaGithub,FaLinkedin,FaFacebook} from 'react-icons/fa'
+
 const Contact = () => {
     return (
-      <div name='contact' className='w-full h-screen bg-[#1a2238] flex justify-center items-center p-4 mt-[140px] '>
-      <form method='POST' action="https://getform.io/f/b11d39d2-33b2-46ca-be41-10e43ecd3e38" className='flex flex-col max-w-[600px] w-full'>
-          <div className='pb-8'>
-              <p className='text-4xl font-bold inline border-b-4 border-[#ff6a3d] text-[#ff6a3d]'>Contact</p>
-              <p className='text-[#9daaf2] py-4'> Reach out to me through the following form</p>
-          </div>
-          <input className='bg-[#fff] p-2' type="text" placeholder='Name' name='name' />
-          <input className='my-4 p-2 bg-[#fff]' type="email" placeholder='Email' name='email' />
-          <textarea className='bg-[#fff] p-2' name="message" rows="10" placeholder='Message'></textarea>
-          <button className='text-white border-2 hover:bg-[#ff6a3d] hover:border-[#ff6a3d] px-4 py-3 my-8 mx-auto flex items-center'>Let's Collaborate</button>
-      </form>
-  </div>
+      <div className={'hidden lg:flex fixed flex-col top-[35%] left-3'}>
+      <ul>
+        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[9DAAF2]' >
+          <a className='flex justify-between items-center w-full text-[#FF6A3D]' href="/">Linkedin <FaLinkedin size={30} /></a></li>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[9DAAF2]' >
+          <a className='flex justify-between items-center w-full text-[#FF6A3D]' href="/">Facebook <FaFacebook size={30} /></a></li>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[9DAAF2]' >
+          <a className='flex justify-between items-center w-full text-[#FF6A3D]' href="/">GitHub <FaGithub size={30} /></a></li>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[9DAAF2]' >
+          <a className='flex justify-between items-center w-full text-[#FF6A3D]' href="/">Email <HiOutlineMail size={30} /></a></li>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[9DAAF2]' >
+          <a className='flex justify-between items-center w-full text-[#FF6A3D]' href="/">Resume <BsFillPersonLinesFill size={30} /></a></li>
+      
+     </ul>
+    </div>
 )
 }
 
