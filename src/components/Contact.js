@@ -1,7 +1,7 @@
 import React from 'react'
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import {FaBars, FaTimes, FaGithub,FaLinkedin,FaFacebook} from 'react-icons/fa'
+import { FaGithub,FaLinkedin,FaFacebook} from 'react-icons/fa'
 
 const Contact = () => {
     return (
